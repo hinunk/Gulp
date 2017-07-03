@@ -73,11 +73,11 @@ gulp.task('static-files', ['reset'], function() {
         .pipe(gulp.dest('build/'));
 })
 
-gulp.task('watch', function() {
-    livereload.listen();
-    gulp.watch('*.js', ['onlyjs']);
-    gulp.watch('*.css', ['onlycss']);
-    gulp.watch(imagePath, ['onlyimages']);
-});
+// gulp.task('watch', function() {
+//     livereload.listen();
+//     gulp.watch('*.js', ['onlyjs']);
+//     gulp.watch('*.css', ['onlycss']);
+//     gulp.watch(imagePath, ['onlyimages']);
+// });
 
 gulp.task('default', ['js', 'css', 'images', 'MP3', 'static-files']);
